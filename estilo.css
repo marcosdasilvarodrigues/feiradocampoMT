@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f5ef;
+  color: #333;
+}
+
+.topo {
+  text-align: center;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  color: white;
+  padding: 30px 20px;
+}
+
+.topo h1 .verde {
+  color: #fff700;
+}
+
+.btn-destaque {
+  background: #fff;
+  color: #4caf50;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.banner-rotativo {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #fff700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.destaques {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 10px 10px 10px;
+  font-size: 14px;
+}
+
+.btn-mini {
+  display: inline-block;
+  margin: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.como-funciona {
+  background: #e7f5e5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.passos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.passo {
+  width: 200px;
+}
+
+footer {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
