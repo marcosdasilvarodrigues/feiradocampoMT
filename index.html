@@ -4,83 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feira do Campo MT - Campo Verde</title>
-  <link rel="stylesheet" href="estilo.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: Arial, sans-serif; line-height: 1.6; background: #f8f8f8; color: #333;}
+    header {background-color: #388e3c; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000;}
+    header h1 span {color: yellow; font-weight: bold;}
+    nav ul {display: flex; justify-content: center; gap: 30px; list-style: none; background: #2e7d32; padding: 10px;}
+    nav ul li a {color: white; text-decoration: none; font-weight: bold;}
+    .hero {background: url('https://source.unsplash.com/1600x400/?farm,market') center/cover no-repeat; padding: 60px 20px; text-align: center; color: white;}
+    .hero h2 {font-size: 2.5em; background: rgba(0, 0, 0, 0.5); display: inline-block; padding: 10px;}
+    .destaque {background: white; padding: 20px; text-align: center;}
+    .destaque h3 {margin-bottom: 20px; color: #388e3c;}
+    .carrossel {display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding: 10px;}
+    .card {min-width: 300px; flex: 0 0 auto; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.2); scroll-snap-align: start; border-radius: 10px; overflow: hidden;}
+    .card img {width: 100%; height: 200px; object-fit: cover;}
+    .card h4, .card p {padding: 10px;}
+    .sobre {padding: 40px 20px; background: #e0f2f1; text-align: center;}
+    .sobre h2 {color: #2e7d32; margin-bottom: 20px;}
+    .botao {background: #43a047; color: white; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer; margin-top: 10px; text-decoration: none; display: inline-block;}
+    .footer {background: #2e7d32; color: white; text-align: center; padding: 20px;}
+    .whatsapp-btn {position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px; border-radius: 50%; font-size: 24px; z-index: 1000;}
+  </style>
 </head>
 <body>
-
-  <header class="topo">
-    <h1><span class="verde">Feira do Campo</span> MT</h1>
-    <p>Conectando produtores de <strong>Campo Verde - MT</strong> com compradores de todo o Brasil.</p>
-    <a href="cadastro.html" class="btn-destaque">Anuncie seu Produto ou Leilão</a>
+  <header>
+    <h1><span>Feira do Campo MT</span> - Campo Verde</h1>
+    <p>Venda direta e leilões rurais – Produtos da roça, animais e fretes</p>
   </header>
 
-  <section class="banner-rotativo">
-    <div class="slide">
-      <img src="img/gado-destaque.jpg" alt="Gado Nelore">
-      <div class="legenda">
-        <h2>Bezerros Nelore em Promoção</h2>
-        <p>Aproveite! Lotes com preço de ocasião.</p>
-        <a href="anuncio.html" class="btn">Ver Oferta</a>
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#anuncios">Anúncios</a></li>
+      <li><a href="#leiloes">Leilões</a></li>
+      <li><a href="#transportes">Transportes</a></li>
+      <li><a href="#cadastro">Cadastrar</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Compre direto do produtor! Anuncie, venda e participe de leilões!</h2>
+    <a class="botao" href="#cadastro">Cadastrar meu produto</a>
+  </section>
+
+  <section class="destaque" id="anuncios">
+    <h3>🐄 Anúncios em Destaque</h3>
+    <div class="carrossel">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?cow" alt="Gado">
+        <h4>Bezerro Nelore</h4>
+        <p>R$ 1.200,00 - Campo Verde/MT</p>
       </div>
-    </div>
-    <div class="slide">
-      <img src="img/trator-leilao.jpg" alt="Leilão de tratores">
-      <div class="legenda">
-        <h2>Leilão de Tratores Usados</h2>
-        <p>Participe! Leilão Online com preços a partir de R$ 12 mil</p>
-        <a href="leiloes.html" class="btn">Ver Leilões</a>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?pig" alt="Porco">
+        <h4>Leitão Caipira</h4>
+        <p>R$ 350,00 - Dom Aquino/MT</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?eggs" alt="Ovos">
+        <h4>Caixa de ovos - 30 unid.</h4>
+        <p>R$ 20,00 - Juscimeira/MT</p>
       </div>
     </div>
   </section>
 
-  <section class="destaques">
-    <h2>Oportunidades em Destaque</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="img/porcos.jpg" alt="Porcos">
-        <h3>Lote de Leitões</h3>
-        <p>Apenas R$ 250 cada. Entrega em Campo Verde.</p>
-        <a href="anuncio.html" class="btn-mini">Comprar Agora</a>
-      </div>
-      <div class="card">
-        <img src="img/galinhas.jpg" alt="Galinhas">
-        <h3>Galinhas Caipiras</h3>
-        <p>Criação natural. Promoção por tempo limitado.</p>
-        <a href="anuncio.html" class="btn-mini">Ver Mais</a>
-      </div>
-      <div class="card">
-        <img src="img/milho.jpg" alt="Milho Seco">
-        <h3>Milho Seca Saco 60kg</h3>
-        <p>Venda direta do produtor. Entrega rápida.</p>
-        <a href="anuncio.html" class="btn-mini">Ver Oferta</a>
-      </div>
-    </div>
+  <section class="sobre">
+    <h2>🌾 Sobre a Feira do Campo MT</h2>
+    <p>Somos uma plataforma de Campo Verde-MT voltada para facilitar a comercialização de produtos agropecuários. Aqui você encontra gado, aves, suínos, produtos da roça e também participa de leilões online e encontra fretes regionais. Tudo simples, direto e pelo WhatsApp.</p>
+    <a class="botao" href="#leiloes">Ver Leilões</a>
   </section>
 
-  <section class="como-funciona">
-    <h2>Como Funciona a Feira do Campo MT?</h2>
-    <div class="passos">
-      <div class="passo">
-        <h3>1. Cadastre-se</h3>
-        <p>Insira seus dados e crie seu anúncio com fotos.</p>
-      </div>
-      <div class="passo">
-        <h3>2. Negocie direto</h3>
-        <p>Compradores entram em contato pelo WhatsApp.</p>
-      </div>
-      <div class="passo">
-        <h3>3. Venda e Entregue</h3>
-        <p>Você escolhe o melhor frete. Sem taxas ocultas.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p><strong>Feira do Campo MT</strong> - Plataforma de negócios rurais de Campo Verde - Mato Grosso</p>
-    <p>© 2025 - Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>&copy; 2025 Feira do Campo MT - Todos os direitos reservados | Campo Verde - MT</p>
   </footer>
 
+  <a href="https://wa.me/5565999999999" class="whatsapp-btn" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
